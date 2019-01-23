@@ -1,0 +1,34 @@
+{
+    "name": "nuxt-handball",
+    "version": "1.0.0",
+    "description": "Nuxt.js project",
+    "author": "Matthieu Marais <mqtthieu@gmail.com>",
+    "private": true,
+    "scripts": {
+        "dev": "nuxt",
+        "build": "nuxt build",
+        "start": "nuxt start",
+        "generate": "nuxt generate",
+        "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+        "precommit": "npm run lint"
+    },
+    "dependencies": {
+        "@firebase/firestore-types": "^0.7.0",
+        "bootstrap": "^4.2.1",
+        "cross-env": "^5.2.0",
+        "firebase": "^5.7.3",
+        "firebase-auth": "^0.1.2",
+        "nuxt": "^2.2.0",
+        "vuefire": "^2.0.0-alpha.20",
+        "vuexfire": "^3.0.0-alpha.10"
+    },
+    "devDependencies": {
+        "babel-eslint": "^10.0.1",
+        "eslint": "^4.19.1",
+        "eslint-friendly-formatter": "^4.0.1",
+        "eslint-loader": "^2.1.1",
+        "eslint-plugin-vue": "^4.0.0",
+        "nodemon": "^1.18.9",
+        "webpack": "^4.1.0"
+    }
+}
