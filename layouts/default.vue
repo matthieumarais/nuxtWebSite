@@ -1,8 +1,33 @@
 <template>
   <div>
-    <nuxt/>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nuxt-link class="navbar-brand" to="/"><img src="~assets/img/logoHand.png" alt=""></nuxt-link>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <nuxt-link class="nav-link" to="/">Home</nuxt-link>
+        </li>
+        <li class="nav-item">
+          <nuxt-link class="nav-link" to="/actus">Actualités</nuxt-link>
+        </li>
+        <li class="nav-item">
+          <nuxt-link class="nav-link" to="/contact">Contact</nuxt-link>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <nuxt/>
   </div>
 </template>
+<script>
+export default {
+  
+}
+</script>
 
 <style>
 html {
@@ -20,7 +45,9 @@ html {
   box-sizing: border-box;
   margin: 0;
 }
-
+.navbar-brand img{
+  max-height: 60px;
+}
 .button--green {
   display: inline-block;
   border-radius: 4px;
