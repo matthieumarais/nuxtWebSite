@@ -53,7 +53,7 @@
 
   async asyncData({app, params, error}) {
         const allActus = fireDb.collection('actus')
-        const oneActu = allActus.doc('actus')
+        const oneActu = allActus.doc('0Usm4g00pZVUkO2L3pBE')
         let snaps
         let snap
         try{
@@ -104,9 +104,11 @@
 
         //écrire sur Firestore
       async writeToFirestore() {
-        const ref = fireDb.collection("test").doc("test")
+        const ref = fireDb.collection("actus").doc()
         const document = {
-          text: "This is a test message."
+          title: "This is a title message.",
+          content: "This is a title message.",
+          date: "date"
         }
         try {
           await ref.set(document)
@@ -114,8 +116,12 @@
           // TODO: error handling
           console.error(e)
         }
-        this.writeSuccessful = true
+        //let arr = []
+        this.actus.push(document)
+        //this.writeSuccessful = true
+        //this.actus = arr
       },
+
       //afficher les infos côté client d'un document
       async readFromFirestore() {
         const ref = fireDb.collection("test").doc("test")
