@@ -45,6 +45,7 @@ module.exports = {
     modules: [
         //'bootstrap-vue/nuxt',['@nuxtjs/bootstrap-vue', { css: false }]
         //'@nuxtjs/bootstrap-vue',
+        ['@nuxtjs/bootstrap-vue']
     ],
     router: {}
 }
