@@ -8,14 +8,14 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent" v-bind:class="{show : isOpen}">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item" @click="toggleMenu()">
-          <nuxt-link class="nav-link" to="/">Home</nuxt-link>
+        <li class="nav-item">
+          <nuxt-link class="nav-link" @click.native='toggleMenu' to="/">Home</nuxt-link>
         </li>
-        <li class="nav-item" @click="toggleMenu()">
-          <nuxt-link class="nav-link" to="/actus">Actualités</nuxt-link>
+        <li class="nav-item">
+          <nuxt-link class="nav-link" @click.native='toggleMenu' to="/actus">Actualités</nuxt-link>
         </li>
-        <li class="nav-item" @click="toggleMenu()">
-          <nuxt-link class="nav-link" to="/contact">Contact</nuxt-link>
+        <li class="nav-item">
+          <nuxt-link class="nav-link" @click.native='toggleMenu' to="/contact">Contact</nuxt-link>
         </li>
       </ul>
     </div>
